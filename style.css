@@ -1,0 +1,289 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  height: 70px;
+  background-color: blue;
+  display: flex;
+  padding: 0px 100px;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+header h1 {
+  color: white;
+  line-height: 70px;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  height: 70px;
+  line-height: 70px;
+  padding: 0 25px;
+}
+
+ul li a:hover {
+  background-color: blue;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content section {
+  min-height: 100vh;
+  background-color: grey;
+  margin: 20px 0;
+  padding: 70px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* home */
+.main {
+  padding: 100px 0;
+  background-color: rgb(119, 160, 207);
+}
+img.kanan{
+  width:50%;
+  float: right;
+}
+.btn-wrapper {
+text-align: center;
+margin: 20px;
+}
+.btn {
+padding: 12px 24px;
+color: rgb(255, 255, 255);
+display: inline-block;
+opacity: 0.8;
+border-radius: 4px;
+text-align: center;
+text-decoration-line: none;
+text-size-adjust: 20px;
+}
+.btn:hover {
+opacity: 1;
+}
+.signup{
+background-color: #0e1e64;
+}
+.copy-container{
+padding-bottom: 80px;
+padding-left: 5%;
+padding-right: 5%;
+text-align: left;
+}
+.copy-container h1 {
+font-size: 60px;
+color: rgb(255, 255, 255);
+}
+
+.copy-container h2 {
+font-size: 30px;
+color: rgb(255, 255, 255);
+}
+.copy-container p {
+margin-bottom: 3px;
+color: rgb(255, 255, 255);
+}
+.copy-container span {
+  color: rgb(40, 40, 145);
+}
+
+/*about */
+#About {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+/* Pendaftaran */
+#Pendaftaran {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+.pendaftaran-title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card-content {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 40px 30px;
+  margin: 40px;
+}
+
+.card {
+  border-radius: 10px;
+  width: 310px;
+  overflow: hidden;
+  background-color: #F5F5F5;
+  transition: ease-in-out .3s;
+  cursor: default;
+}
+
+.card:hover {
+  box-shadow: 0px 3px 30px 0px rgba(0,0,0,0.4);
+}
+
+.card-img {
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.card-property {
+  margin: 30px;
+}
+
+.card-property a {
+  color: #19A7CE;
+}
+
+.card-property-scedule {
+  font-size: 14px;
+  color: #5c5c5c;
+}
+
+.card-property-title {
+  font-size: 24px;
+  margin-top: 10px;
+  color: rgb(39, 39, 39);
+}
+
+.card-property-price {
+  font-size: 14px;
+  margin: 10px 0;
+  font-weight: 700;
+  color: #444343;
+}
+
+.card-property-desc {
+  font-size: 13px;
+  margin-bottom: 20px;
+  color: #5c5c5c;
+}
+/* End */
+
+/* Formulir */
+.message-wrapper {
+  margin: 80px;
+  background-color: white;
+}
+
+.heading h2 {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.formulir {
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  width: 500px;
+}
+
+.input-text {
+  font-size: 25px;
+  height: 40px;
+  margin-bottom: 15px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 5px solid transparent;
+  border-image: linear-gradient(to right, #0088ff 0%, #e4eaff 100%);
+  border-image-slice: 1;
+}    
+
+.submit {
+  font-size: 25px;
+  height: 40px;
+  color: #c8d5ff;
+  background-color: #e4eaff;
+  border: 1px solid transparent;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.submit:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+/* End */
+
+footer {
+  background-color: blue;
+  text-align: center;
+  padding: 1rem 0 3rem;
+  margin-top: 3rem;
+}
+
+footer .links {
+  margin-bottom: 1.4rem;
+}
+
+footer .links a {
+  color: white;
+  padding: 0.7rem 1 rem;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+}
+
+footer .credit a {
+  color: white;
+  font-weight: 700;
+}
+
+
+/* Break Point */
+
+@media (max-width: 768px) {
+  .card-content {
+   grid-template-columns: auto auto;
+   column-gap: 20px;
+ }
+
+@media (max-width: 425px) {
+  .card-content {
+      grid-template-columns: auto;
+      column-gap: 20px;
+  }
+}
